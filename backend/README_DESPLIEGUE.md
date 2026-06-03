@@ -47,7 +47,7 @@ Proyecto-SRR/
 
 ### Control de acceso por roles
 
-| Rol | Puede hacer |
+| Rol |
 |---|---|
 | `admin` | Todo (incluye DELETE) |
 | `supervisor` | GET/POST/PUT en pedidos y repartidores |
@@ -95,15 +95,13 @@ git push origin main
 ```
 
 ### 2. Crear Web Service en Render
-1. Ir a [https://render.com](https://render.com) → **New → Web Service**
-2. Conectar tu repositorio de GitHub
-3. Configurar:
+
+Configurar:
    - **Build Command:** `cd backend && npm install`
    - **Start Command:** `cd backend && npm start`
    - **Runtime:** Node
 
 ### 3. Variables de entorno en Render
-En *Settings → Environment*, agrega:
 
 | Variable | Valor |
 |---|---|
@@ -113,27 +111,20 @@ En *Settings → Environment*, agrega:
 | `NODE_ENV` | `production` |
 
 ### 4. Obtener el link en vivo
-Render genera una URL del tipo:
 `https://sspr-backend.onrender.com`
 
 ### 5. Conectar el frontend
-En `frontend/.env`:
-```
+
 VITE_API_URL=https://sspr-backend.onrender.com
 ```
 
-> ⚠️ **Nota Render plan gratuito:** el servidor entra en reposo tras 15 min de inactividad. La primera petición puede tardar ~30 segundos en despertar.
-
 ---
 
-## 🧪 Pruebas con Postman
+## Pruebas con Postman
 
 ### Importar la colección
-1. Abrir Postman
-2. **Import** → seleccionar `SSPR_API.postman_collection.json`
-3. Ir a la colección → **Variables** → pegar la URL del servidor en `base_url`
 
-### Flujo de prueba recomendado
+### Flujo de prueba
 
 ```
 1. Auth → Login (admin)           → guarda el token automáticamente
