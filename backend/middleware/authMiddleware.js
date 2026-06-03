@@ -1,12 +1,10 @@
 // ============================================================
 //  middleware/authMiddleware.js
-//  Verifica que el request traiga un JWT válido
 // ============================================================
 const jwt = require("jsonwebtoken");
 
 /**
  * Middleware que protege rutas privadas.
- * Espera el header:  Authorization: Bearer <token>
  */
 const verifyToken = (req, res, next) => {
   const authHeader = req.headers["authorization"];
