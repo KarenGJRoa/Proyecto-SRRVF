@@ -14,8 +14,7 @@ services:
     healthCheckPath: /
 
     envVars:
-      # ⚠️  NUNCA pongas el valor real aquí; úsalo como referencia
-      # En el dashboard de Render: Settings → Environment → Add
+ 
       - key: MONGO_URI
         sync: false
       - key: JWT_SECRET
