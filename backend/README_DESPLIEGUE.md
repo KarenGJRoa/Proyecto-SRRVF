@@ -83,27 +83,6 @@ Proyecto-SRR/
 - `estado`: opcional, debe ser: `Disponible | En ruta | No disponible`
 
 ---
-
-## Instalación local
-
-```bash
-# 1. Ir a la carpeta del backend
-cd backend
-
-# 2. Instalar dependencias
-npm install
-
-# 3. Crear archivo de entorno
-cp .env.example .env
-# Edita .env y cambia JWT_SECRET por una clave segura
-
-# 4. Correr el servidor
-npm run dev        # Con nodemon (recarga automática)
-npm start          # Producción
-```
-
-El servidor queda en: `http://localhost:3000`
-
 ---
 
 ## Despliegue en Render 
