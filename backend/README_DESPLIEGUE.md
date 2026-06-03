@@ -3,7 +3,7 @@
 
 ---
 
-## 📁 Estructura del proyecto
+##  Estructura del proyecto
 
 ```
 Proyecto-SRR/
@@ -33,7 +33,7 @@ Proyecto-SRR/
 
 ---
 
-## 🔐 Seguridad implementada
+##  Seguridad implementada
 
 ### JWT (JSON Web Tokens)
 
@@ -63,7 +63,7 @@ Proyecto-SRR/
 
 ---
 
-## ✅ Validaciones implementadas
+##  Validaciones implementadas
 
 ### POST /api/auth/login
 - `email`: obligatorio, formato válido, normalizado
@@ -84,7 +84,7 @@ Proyecto-SRR/
 
 ---
 
-## 🚀 Instalación local
+## Instalación local
 
 ```bash
 # 1. Ir a la carpeta del backend
@@ -106,9 +106,9 @@ El servidor queda en: `http://localhost:3000`
 
 ---
 
-## ☁️ Despliegue en Render (paso a paso)
+## Despliegue en Render 
 
-### 1. Sube el proyecto a GitHub
+### 1. proyecto en GitHub
 ```bash
 git add .
 git commit -m "feat: backend con JWT, validaciones y rutas protegidas"
